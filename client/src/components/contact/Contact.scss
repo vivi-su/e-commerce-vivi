@@ -1,0 +1,35 @@
+@use "./src/styles/basic.scss" as *;
+@use "./src/styles/mixins.scss" as *;
+
+
+.contact{
+    background-color: #2879fe;
+    color:white;
+    padding:1rem 3rem;
+
+    &__wrapper{
+    @include flex(row, space-between,center); 
+    width:50%;
+    margin:0 auto;
+
+        input{
+            border:none;
+            padding:0.5rem 0.8rem;
+            border-radius: 5px 0 0 5px;
+        }
+
+        button{
+            border:none;
+            padding:0.5rem 0.8rem;
+            border-radius: 0 5px 5px 0;
+            background-color: #333;
+            color:white;
+        }
+
+    }
+    &__icons{
+        display: flex;
+        gap:0.8rem;    
+    }
+    
+}

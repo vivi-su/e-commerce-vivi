@@ -1,0 +1,42 @@
+@use "./src/styles/basic" as *;
+@use "./src/styles/mixins" as *;
+
+.slider{
+    
+    height: calc(100vh - 250px);
+    width:100vw;
+    position:relative;
+    overflow: hidden;
+
+    &__container{
+        width:300vw;
+        height: 100%;
+        display: flex;
+        transition: all 1s ease;
+    
+
+        img{
+            width:100vw;
+            height:100%;
+            object-fit: cover;
+        }
+    }
+
+    &__icons{
+        position: absolute;
+        bottom:20px;
+        left:0;
+        right:0;
+        @include flex(row, center, center);
+        gap:10px;
+    }
+
+    &__icon{
+        width:4rem;
+        height:2rem;
+        border:1px solid #999;
+        @include flex(column,center, center);
+        cursor: pointer;
+        color:white;
+    }
+}

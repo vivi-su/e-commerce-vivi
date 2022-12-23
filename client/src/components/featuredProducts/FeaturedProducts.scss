@@ -1,0 +1,28 @@
+@use "./src/styles/basic" as *;
+@use "./src/styles/mixins" as *;
+
+.featured-products{
+
+    &__left{
+        @include flex(row, space-between, flex-start);
+        margin:4rem;
+        
+        h1{
+            flex:2;
+            text-transform:uppercase;
+            margin-right: 1.5rem;
+        }
+
+    }
+
+    &__right{
+        flex:3;
+    }
+
+    &__cards{
+        @include flex(row, flex-start, flex-start);
+        gap:4rem;
+        margin:2rem;
+    }
+
+}

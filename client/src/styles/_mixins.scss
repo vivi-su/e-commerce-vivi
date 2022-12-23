@@ -1,0 +1,36 @@
+$mobile-max-width:767px;
+$tablet-min-width:768px;
+$desktop-min-width:1280px;
+
+/* media query for mobile */
+
+@mixin small{
+    @media only screen and (max-width:$mobile-max-width){
+        @content;
+    }
+}
+
+/* media query for tablet */
+
+@mixin medium{
+    @media only screen and (min-width:$tablet-min-width){
+        @content;
+    }
+}
+
+/* media query for desktop */
+
+@mixin large{
+    @media only screen and (min-width:$desktop-min-width){
+        @content;
+    }
+}
+
+
+/* Flex */
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}

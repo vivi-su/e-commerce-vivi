@@ -1,0 +1,51 @@
+@use "./src/styles/basic" as *;
+@use "./src/styles/mixins" as *;
+
+.footer{
+
+    &__top{
+    @include flex(row, space-around, flex-start);
+    margin:6rem 3rem 2rem 3rem;
+    gap:4.5rem;
+    }
+
+    &__bottom{
+    @include flex(row, space-between, flex-start);
+    margin:4rem 3rem 10rem 3rem;
+    }
+
+    &__item{
+    flex:1;
+    
+    @include flex(column, flex-start, flex-start);
+    gap:0.5rem;
+    text-align: justify;
+    font-size: 0.8rem;
+
+    h2{
+        font-size: 1rem;
+        font-weight:500;
+        color:#555;
+    }
+
+    p{
+        color:grey;
+    }
+    }
+
+    &__brand{
+        color:#2879fe;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+
+    &__copyright{
+        font-size:1rem;
+        color:grey;
+        margin-left: 1.5rem;
+    }
+
+    &__payment{
+        max-width:30rem;
+    }
+}

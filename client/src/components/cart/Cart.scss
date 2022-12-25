@@ -1,0 +1,86 @@
+@use "./src/styles/basic.scss" as *;
+@use "./src/styles/mixins.scss" as *;
+
+.cart{
+    position:absolute;
+    right:1rem;
+    top:5rem;
+    z-index:999;
+    background-color: white;
+    padding:1rem;
+    -webkit-box-shadow: 0px 0px 7px -5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 7px -5px rgba(0, 0, 0, 0.5);
+
+    h1{
+        margin-bottom: 1rem;
+        color:gray;
+        font-weight:400;
+        font-size:1.4rem;
+    }
+
+    &__image{
+        width:5rem;
+        height:6rem;
+        object-fit: cover;
+    }
+
+    &__item{
+        @include flex(row, space-between, flex-start);
+        gap:1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__delete{
+        cursor: pointer;
+    }
+
+    &__details{
+
+        h1{
+         font-size: 1rem;
+         font-weight: 500; 
+        }
+
+        p{
+         color:gray;
+         margin-bottom:0.8rem;
+         font-size:0.8rem;
+        }
+    }
+
+    &__price{
+        color:#2879fe;
+    }
+
+    &__delete{
+        color:red;
+        font-size: 1.4rem;
+    }
+
+    &__total{
+        @include flex(row, space-between, center);
+        font-weight: 500;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    button{
+        width:16rem;
+        padding:0.5rem;
+        background-color: #2897fe;
+        color:white;
+        @include flex(row, center, center);
+        border:none;
+        gap:0.6rem;
+        font-weight:500;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
+
+    &__reset{
+        color:red;
+        font-size: 0.8rem;
+        cursor: pointer;
+    }
+
+}

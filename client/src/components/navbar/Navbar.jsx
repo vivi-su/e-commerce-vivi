@@ -22,7 +22,7 @@ const Navbar = () => {
             className="navbar__flag"
           />
           <KeyboardArrowDownIcon />
-          <span>USD</span>
+          <span>CAD</span>
           <KeyboardArrowDownIcon />
           <Link to="/products/1" className="navbar__link">
             Women

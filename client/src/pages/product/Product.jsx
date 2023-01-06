@@ -13,6 +13,9 @@ const Product = () => {
     "https://images.pexels.com/photos/1855582/pexels-photo-1855582.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
   ];
 
+      // const { data, loading, error } = useFetch(
+      //   `/product?`)
+
   return (
     <div className="product">
       <div className="product__left">

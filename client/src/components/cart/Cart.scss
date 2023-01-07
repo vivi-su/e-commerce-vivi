@@ -25,7 +25,7 @@
     }
 
     &__item{
-        @include flex(row, space-between, flex-start);
+        @include flex(row, flex-start, flex-start);
         gap:1rem;
         margin-bottom: 1rem;
     }

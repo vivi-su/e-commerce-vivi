@@ -33,7 +33,6 @@ const Product = () => {
             <div className="product__images">
               <img
                 src={
-                  process.env.REACT_APP_UPLOAD_URL +
                   data?.attributes?.img?.data?.attributes?.url
                 }
                 alt=""
@@ -41,7 +40,6 @@ const Product = () => {
               ></img>
               <img
                 src={
-                  process.env.REACT_APP_UPLOAD_URL +
                   data?.attributes?.img2?.data?.attributes?.url
                 }
                 alt=""
@@ -53,7 +51,7 @@ const Product = () => {
                 <>
                   <img
                     src={
-                      process.env.REACT_APP_UPLOAD_URL +
+                
                       data?.attributes?.img?.data?.attributes?.url
                     }
                     alt=""
@@ -62,7 +60,7 @@ const Product = () => {
               ) : (
                 <img
                   src={
-                    process.env.REACT_APP_UPLOAD_URL +
+                    
                     data?.attributes?.img2?.data?.attributes?.url
                   }
                   alt=""

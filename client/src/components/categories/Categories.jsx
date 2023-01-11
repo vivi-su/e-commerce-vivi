@@ -23,7 +23,7 @@ const Categories = () => {
             alt=""
           ></img>
           <button>
-            <Link className="categories__link" to="/products/1">
+            <Link className="categories__link" to="/products/2">
               Women
             </Link>
           </button>

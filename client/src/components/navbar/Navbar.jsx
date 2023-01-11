@@ -25,15 +25,13 @@ const Navbar = () => {
           <KeyboardArrowDownIcon />
           <span>CAD</span>
           <KeyboardArrowDownIcon />
-          <Link to="/products/1" className="navbar__link">
+          <Link to="/products/2" className="navbar__link">
             Women
           </Link>
-          <Link to="/products/2" className="navbar__link">
+          <Link to="/products/1" className="navbar__link">
             Men
           </Link>
-          <Link to="/products/3" className="navbar__link">
-            Children
-          </Link>
+        
         </div>
 
         <Link to="/" className="navbar__link navbar__brand">

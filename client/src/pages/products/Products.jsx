@@ -14,6 +14,7 @@ const Products = () => {
 
   const {data} = useFetch(`/sub-categories?[filters][categories][id][$eq]=${catId}`);
 
+  console.log(catId);
   const handleChange = (e) =>{
     const value = e.target.value;
     const isChecked = e.target.checked;
@@ -28,7 +29,12 @@ const Products = () => {
           <h2>Product Categories</h2>
           {data?.map((item) => (
             <div className="products__input-item" key={item.id}>
-              <input type="checkbox" id={item.id} value={item.id} onChange={handleChange}/>
+              <input
+                type="checkbox"
+                id={item.id}
+                value={item.id}
+                onChange={handleChange}
+              />
               <label htmlFor={item.id}>{item.attributes.title}</label>
             </div>
           ))}
@@ -72,12 +78,26 @@ const Products = () => {
         </div>
       </div>
       <div className="products__right">
-        <img
-          src="https://images.pexels.com/photos/1488463/pexels-photo-1488463.jpeg?auto=compress&cs=tinysrgb&w=1600"
-          alt=""
-          className="products__cat-img"
-        ></img>
-        <List catId={catId} maxPrice={maxPrice} sort={sort} subCats={selectedSubCats}/>
+        {catId === 2 && (
+          <img
+            src="https://images.pexels.com/photos/1488463/pexels-photo-1488463.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt=""
+            className="products__cat-img"
+          ></img>
+        )}
+        {catId === 1 && (
+          <img
+            src="https://images.pexels.com/photos/175696/pexels-photo-175696.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt=""
+            className="products__cat-img"
+          ></img>
+        )}
+        <List
+          catId={catId}
+          maxPrice={maxPrice}
+          sort={sort}
+          subCats={selectedSubCats}
+        />
       </div>
     </div>
   );

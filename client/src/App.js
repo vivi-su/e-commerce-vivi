@@ -24,24 +24,28 @@ const Layout = () =>{
 
 const router = createBrowserRouter([
   {
-    path:"/",
-    element:<Layout />,
-    children:[
+    path: "/",
+    element: <Layout />,
+    children: [
       {
-        path:"/",
-        element:<Home />
+        path: "/",
+        element: <Home />,
       },
       {
-        path:"/products/:id",
-        element:<Products />
+        path: "/products/:id",
+        element: <Products />,
       },
       {
-        path:"/product/:id",
-        element:<Product />
-      }
-    ]
-  }
-])
+        path: "/product/:id",
+        element: <Product />,
+      },
+      {
+        path: "/products/:id/product/:id",
+        element: <Product />,
+      },
+    ],
+  },
+]);
 
 function App() {
   return (

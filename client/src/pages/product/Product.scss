@@ -1,0 +1,112 @@
+@use "./src/styles/basic.scss" as *;
+@use "./src/styles/mixins.scss" as *;
+
+.product{
+    padding:1.5rem 2.5rem;
+    display: flex;
+    gap:4.2rem;
+
+    &__left{
+        flex:1;
+        display: flex;
+        gap:1rem;
+    }
+
+    &__right{
+        flex:1;
+        @include flex(column, flex-start, flex-start);
+        gap:1.5rem;
+    }
+
+    &__images{
+        flex:1;
+            
+        img{
+            width:100%;
+            min-width: 5rem;
+            max-height:12rem;
+     
+            object-fit: cover;
+            cursor: pointer;
+            margin-bottom:0.8rem;
+        }
+    }
+
+    &__main-img{
+        flex:5;
+
+        img{
+            width:100%;
+            max-height:500px;
+            object-fit: cover;
+        }
+    }
+
+    &__price{
+        font-size: 1.3rem;
+        color:#2879fe;
+        font-weight: 500;
+    }
+
+    &__text{
+        font-size: 1.1rem;
+        font-weight: 300;
+        text-align: justify;
+    }
+
+    &__quantity{
+        @include flex(row, flex-start, center);
+        gap:0.6rem;
+
+        button{
+            width:3rem;
+            height:3rem;
+            cursor:pointer;
+            border: none;
+        }
+  
+    }
+
+    &__add{
+        width:16rem;
+        padding:0.5rem;
+        background-color: #2897fe;
+        color:white;
+        @include flex(row, center, center);
+        border:none;
+        gap:0.6rem;
+        font-weight:500;
+        cursor: pointer;
+    }
+
+    &__link{
+        display: flex;
+        gap:1.2rem;
+        cursor: pointer;
+    }
+
+    &__item{
+        @include flex(row, flex-start, center);
+        gap:0.5rem;
+        color:#2879fe;
+        font-size: 0.8rem;
+    }
+
+    &__info{
+        @include flex(column, flex-start, flex-start);
+        gap:0.4rem;
+        color:gray;
+        font-size: 0.8rem;
+        margin-top: 1.5rem;
+
+        hr{
+            width:15rem;
+            border:1px solid rgb(238,237,237);
+        }
+    }
+
+    hr{
+        
+            border:1px solid rgb(238,237,237);
+    }
+}

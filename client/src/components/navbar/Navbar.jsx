@@ -1,5 +1,7 @@
 import {Link} from "react-router-dom";
-import React from 'react'
+import React, {useState} from 'react';
+import { useSelector} from "react-redux";
+import Cart from "../cart/Cart";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import SearchIcon from "@mui/icons-material/Search";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
@@ -7,9 +9,10 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import "./Navbar.scss";
 
-
-
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+  const products = useSelector((state) => state.cart.products);
+
   return (
     <div className="navbar">
       <div className="navbar__wrapper">
@@ -20,17 +23,15 @@ const Navbar = () => {
             className="navbar__flag"
           />
           <KeyboardArrowDownIcon />
-          <span>USD</span>
+          <span>CAD</span>
           <KeyboardArrowDownIcon />
-          <Link to="/products/1" className="navbar__link">
+          <Link to="/products/2" className="navbar__link">
             Women
           </Link>
-          <Link to="/products/2" className="navbar__link">
+          <Link to="/products/1" className="navbar__link">
             Men
           </Link>
-          <Link to="/products/3" className="navbar__link">
-            Children
-          </Link>
+        
         </div>
 
         <Link to="/" className="navbar__link navbar__brand">
@@ -54,13 +55,14 @@ const Navbar = () => {
               <SearchIcon />
               <PersonOutlineIcon />
               <FavoriteBorderIcon />
-              <div className="navbar__cart-icon">
+              <div className="navbar__cart-icon" onClick={()=> setOpen(!open)}>
                 <ShoppingCartOutlinedIcon />
-                <span>0</span>
+                <span>{products.length}</span>
               </div>
-                      </div>
+          </div>
           </div>
       </div>
+          {open && <Cart />}
     </div>
   );
 }

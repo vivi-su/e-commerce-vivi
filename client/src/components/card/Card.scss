@@ -5,6 +5,7 @@
     
     width:18rem; 
     gap:0.8rem;
+    margin-bottom: 2.5rem;
 
     @include flex(column, flex-start,flex-start);
 

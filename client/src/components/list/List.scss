@@ -1,0 +1,7 @@
+@use "./src/styles/basic.scss" as *;
+@use "./src/styles/mixins.scss" as *;
+
+.list{
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+}

@@ -41,13 +41,14 @@
     &__right{
         @include flex(column, center,center);
         gap: 1rem;
+        order:-1;
     }
 
     &__icons{
-        @include flex(column, center,center);
         gap: 1rem;
         color:#777;
         cursor:pointer;
+        display: none;
     }
 
 
@@ -150,9 +151,11 @@
 
          &__right{
             flex-direction: row;
+            order:0;
         }
 
         &__icons{
+            @include flex(row, space-between,center);
             flex-direction: row;
             gap:1rem;
          }

@@ -75,6 +75,10 @@ const Navbar = () => {
           <CloseIcon />
         </button>
       </div>
+
+      <Link to="/" className="navbar__link navbar__brand navbar__brand-mobile">
+        Viishculza
+      </Link>
       <button className="navbar__btn navbar-toggle" onClick={showNavbar}>
         <MenuIcon />
       </button>

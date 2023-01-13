@@ -5,11 +5,12 @@
 
     &__left{
         @include flex(column, space-between, flex-start);
-        margin:4rem;
-        
+       
         h1{
             flex:2;
             text-transform:uppercase;
+            margin-top: 1.5rem;
+            margin-left: 1.5rem;
             margin-right: 1.5rem;
             margin-bottom: 1.5rem;
         }
@@ -17,7 +18,11 @@
     }
 
     &__right{
-        flex:3;
+      flex:3;
+      p{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+      }
     }
 
     &__cards{
@@ -33,10 +38,24 @@
 
         &__left{
             @include flex(row, space-between, flex-start);
+
+            h1{
+                margin-top: 4rem;
+                margin-left: 4rem;
+            }
         }
 
         &__cards{
             @include flex(row, flex-start, flex-start);
         }
-    }
+
+        &__right{
+
+            p{
+                margin-top: 4rem;
+                margin-left: 4rem;
+                margin-right: 1.5rem;
+            }
+         }
+        }
 }

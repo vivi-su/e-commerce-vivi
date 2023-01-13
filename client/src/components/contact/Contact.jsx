@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="contact__wrapper">
-        <span>BE IN TOUCH WITH US:</span>
+        <p>BE IN TOUCH WITH US:</p>
         <div className="contact__mail">
           <input type="text" placeholder="Enter your e-mail..." />
           <button> JOIN US</button>

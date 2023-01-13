@@ -14,7 +14,6 @@ const Products = () => {
 
   const {data} = useFetch(`/sub-categories?[filters][categories][id][$eq]=${catId}`);
 
-  console.log(catId);
   const handleChange = (e) =>{
     const value = e.target.value;
     const isChecked = e.target.checked;

@@ -58,7 +58,7 @@
     }
 }
 
-@include large{
+@include medium{
     .categories{
     @include flex(row, flex-start, flex-start);
     height:80vh;

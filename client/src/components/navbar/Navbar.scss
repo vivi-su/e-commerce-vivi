@@ -16,11 +16,11 @@
         z-index:999;
         background-color: white;
         transition: 1s;
-        transform: none;
+        transform: translateY(-100vh);
     }
 
     &__toggle{
-        transform: translateY(-100vh);
+        transform:none;
     }
 
     &__flag{
@@ -72,10 +72,23 @@
         text-decoration: none;
     }
 
+    &__link:hover{
+        text-decoration: underline 3px #ddd;
+    }
+
     &__brand{
         text-transform: uppercase;
         font-size: 1.4rem;
         letter-spacing: 2px;
+        display: none;
+    }
+
+    &__brand:hover{
+        text-decoration: none;
+    }
+
+    &__brand-mobile{
+        display: block;
         position: absolute;
         top:2rem;
         left:2rem;
@@ -99,7 +112,7 @@
 
 }
 
-@include large{
+@include medium{
     .navbar{
         height: 8rem;
 
@@ -124,9 +137,11 @@
         }
 
         &__brand{
-            position:relative;
-            top:0;
-            left:0;
+            display: block;
+        }
+
+        &__brand-mobile{
+            display:none ;
         }
 
         &__left{

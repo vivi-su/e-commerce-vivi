@@ -36,10 +36,10 @@ const Navbar = () => {
             <span>CAD</span>
             <KeyboardArrowDownIcon />
           </div>
-          <Link to="/products/2" className="navbar__link">
+          <Link to="/products/2" className="navbar__link" onClick={showNavbar}>
             Women
           </Link>
-          <Link to="/products/1" className="navbar__link">
+          <Link to="/products/1" className="navbar__link" onClick={showNavbar}>
             Men
           </Link>
         </div>
@@ -49,7 +49,7 @@ const Navbar = () => {
         </Link>
 
         <div className="navbar__right">
-          <Link to="/" className="navbar__link">
+          <Link to="/" className="navbar__link" onClick={showNavbar}>
             Home
           </Link>
           <Link to="/" className="navbar__link">
@@ -65,7 +65,13 @@ const Navbar = () => {
             <SearchIcon />
             <PersonOutlineIcon />
             <FavoriteBorderIcon />
-            <div className="navbar__cart-icon" onClick={() => setOpen(!open)}>
+            <div
+              className="navbar__cart-icon"
+              onClick={() => {
+                setOpen(!open);
+                showNavbar();
+              }}
+            >
               <ShoppingCartOutlinedIcon />
               <span>{products.length}</span>
             </div>

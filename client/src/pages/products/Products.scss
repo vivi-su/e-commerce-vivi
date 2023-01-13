@@ -1,19 +1,11 @@
+@use "./src/styles/basic" as *;
+@use "./src/styles/mixins" as *;
+
 .products{
     padding:2.8rem 4.8rem;
     display: flex;
 
-    &__left{
-        flex:1;
-        //so categories side bar stay at top 50px
-        position:sticky;
-        height:100%;
-        top:50px;
-     
-    }
-
-    &__right{
-        flex:3;
-    }
+    @include flex(column, flex-start, flex-start);
 
     &__cat-img{
         width:100%;
@@ -37,4 +29,24 @@
             margin-left: 0.7rem;
         }
     }
+}
+
+@include medium{
+
+.products{
+  @include flex(row, flex-start, flex-start);
+    &__left{
+        flex:1;
+        //so categories side bar stay at top 50px
+        position:sticky;
+        height:100%;
+        top:50px;
+    }
+
+       &__right{
+        flex:3;
+    }
+
+}
+
 }

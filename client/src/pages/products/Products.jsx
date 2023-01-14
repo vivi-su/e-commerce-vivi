@@ -14,13 +14,13 @@ const Products = () => {
 
   const {data} = useFetch(`/sub-categories?[filters][categories][id][$eq]=${catId}`);
 
-
   const handleChange = (e) =>{
     const value = e.target.value;
     const isChecked = e.target.checked;
 
     setSelectedSubCats(isChecked?[...selectedSubCats, value]:selectedSubCats.filter((item)=> item !== value));
   }
+  
   return (
     <div className="products">
       <div className="products__left">

@@ -7,20 +7,20 @@ import "./Products.scss";
 const Products = () => {
 
   // const param = useParams(); -> object, id:"1"
-  const catId = parseInt(useParams().id);
+  const catId =parseInt(useParams().id);
   const [maxPrice, setMaxPrice] = useState(300);
   const [sort, setSort] = useState("asc");
   const [selectedSubCats, setSelectedSubCats]= useState([]);
 
   const {data} = useFetch(`/sub-categories?[filters][categories][id][$eq]=${catId}`);
 
+
   const handleChange = (e) =>{
     const value = e.target.value;
     const isChecked = e.target.checked;
 
     setSelectedSubCats(isChecked?[...selectedSubCats, value]:selectedSubCats.filter((item)=> item !== value));
-  };
-
+  }
   return (
     <div className="products">
       <div className="products__left">

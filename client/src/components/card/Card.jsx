@@ -11,7 +11,6 @@ const Card = ({item}) => {
           {item?.attributes.isNew && <span>New Season</span>}
           <img
             src={
-             
               item.attributes?.img?.data?.attributes?.url
             }
             alt=""

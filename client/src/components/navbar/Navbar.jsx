@@ -65,13 +65,7 @@ const Navbar = () => {
             <SearchIcon />
             <PersonOutlineIcon />
             <FavoriteBorderIcon />
-            <div
-              className="navbar__cart-icon"
-              onClick={() => {
-                setOpen(!open);
-                showNavbar();
-              }}
-            >
+            <div className="navbar__cart-icon" onClick={() => setOpen(!open)}>
               <ShoppingCartOutlinedIcon />
               <span>{products.length}</span>
             </div>
@@ -85,9 +79,18 @@ const Navbar = () => {
       <Link to="/" className="navbar__link navbar__brand navbar__brand-mobile">
         Viishculza
       </Link>
-      <button className="navbar__btn navbar-toggle" onClick={showNavbar}>
+
+      <button className="navbar__btn" onClick={showNavbar}>
         <MenuIcon />
       </button>
+
+      <div
+        className="navbar__btn navbar__btn--cart navbar__cart-icon"
+        onClick={() => setOpen(!open)}
+      >
+        <ShoppingCartOutlinedIcon />
+        <span>{products.length}</span>
+      </div>
       {open && <Cart />}
     </div>
   );

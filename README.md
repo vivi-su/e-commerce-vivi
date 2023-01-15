@@ -1,7 +1,7 @@
 
 # VIISHCULZA
 
-VIISHCULZA is an online e-commerce store providing fast fashion clothing , accessories and shoes to man, women.
+VIISHCULZA is an online e-commerce store providing fast fashion clothing , accessories and shoes to man and women.
 
 Project Link: https://vivi-e-commerce.netlify.app/
 ## Tech Stack

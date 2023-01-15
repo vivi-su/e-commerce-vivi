@@ -2,6 +2,13 @@
 @use "./src/styles/mixins.scss" as *;
 
 .list{
+    @include flex(column, center, center);
+}
+
+
+@include large{
+    .list{
     @include flex(row, space-between, center);
-    flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
 }

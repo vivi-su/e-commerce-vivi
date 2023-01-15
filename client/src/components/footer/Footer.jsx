@@ -38,11 +38,22 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__bottom">
+        <img
+          src="/images/payment_v.png"
+          alt="Payment method"
+          className="footer__payment-v"
+        ></img>
         <div>
           <span className="footer__brand">VIISHCULZA</span>
-          <span className="footer__copyright">© Copyright 2023 All Rights Reserved</span>
+          <span className="footer__copyright">
+            © Copyright 2023 All Rights Reserved
+          </span>
         </div>
-        <img src="/images/payment.png" alt="Payment method" className="footer__payment"></img>
+        <img
+          src="/images/payment.png"
+          alt="Payment method"
+          className="footer__payment"
+        ></img>
       </div>
     </>
   );

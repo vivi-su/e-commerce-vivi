@@ -4,13 +4,13 @@
 .footer{
 
     &__top{
-    @include flex(row, space-around, flex-start);
+    @include flex(column, space-around, flex-start);
     margin:6rem 3rem 2rem 3rem;
     gap:4.5rem;
     }
 
     &__bottom{
-    @include flex(row, space-between, flex-start);
+    @include flex(column, space-between, center);
     margin:4rem 3rem 10rem 3rem;
     }
 
@@ -46,6 +46,31 @@
     }
 
     &__payment{
+        display: none;
         max-width:30rem;
     }
+
+    &__payment-v{
+        display: block;
+    }
+}
+
+@include medium{
+    .footer{
+
+        &__top{@include flex(row, space-around, flex-start); 
+        }
+
+        &__payment{
+            display: block;
+        }
+
+        &__payment-v{
+            display: none;
+        }
+
+        &__bottom{
+            @include flex(row, space-between, flex-start);
+        }
+}
 }

@@ -62,7 +62,7 @@ const Categories = () => {
             <div className="categories__row">
               {" "}
               <img
-                src="https://images.pexels.com/photos/1038000/pexels-photo-1038000.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                src="https://images.pexels.com/photos/2285939/pexels-photo-2285939.jpeg?auto=compress&cs=tinysrgb&w=1600"
                 alt=""
               ></img>
               <button>

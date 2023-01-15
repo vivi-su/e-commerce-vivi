@@ -1,5 +1,5 @@
 
-👠 VIISHCULZA
+👠 #VIISHCULZA
 
 VIISHCULZA is an online e-commerce store providing fast fashion clothing , accessories and shoes to man, women.
 

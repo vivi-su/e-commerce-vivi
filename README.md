@@ -3,7 +3,7 @@
 
 VIISHCULZA is an online e-commerce store providing fast fashion clothing , accessories and shoes to man and women.
 
-![Uploading VIISHCULZA-E-COMMERCE.png…]()
+![VIISHCULZA](https://github.com/vivi-su/e-commerce-vivi/assets/81454201/5ef8109d-801a-413a-acc9-4f8c77d7a643)
 
 
 Backend server link: https://e-commerce-vivi-server-production-8468.up.railway.app/

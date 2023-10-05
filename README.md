@@ -17,9 +17,7 @@ Backend server link: https://e-commerce-vivi-server-production-8468.up.railway.a
 
 ## 🍒 About Me
 
-Vivi Schulz
-
-A semiconductor engineer turned into front-end developer
+Vivi Su
 
 LinkedIn: https://www.linkedin.com/in/vivi-su
 

@@ -1,7 +1,7 @@
 
 # VIISHCULZA
 
-VIISHCULZA is a fully responsive fictional online e-commerce store providing fast fashion clothing , accessories and shoes to man and women.
+VIISHCULZA is a full-stack application featuring fully responsive fictional online e-commerce store that offers fast fashion clothing , accessories and shoes to man and women.
 
 - View online shop here: https://vivi-e-commerce.netlify.app/
 
@@ -10,6 +10,10 @@ VIISHCULZA is a fully responsive fictional online e-commerce store providing fas
 Backend Repo here: https://github.com/vivi-su/e-commerce-vivi-server
 
 Backend server link: https://e-commerce-vivi-server-production-8468.up.railway.app/
+
+## Overview
+
+After building several full-stack applications, I had been eager to venture into creating an e-commerce app, primarily to incorporate a Content Management System(CMS) into the system. Consequently, I delved into learning Redux Toolkit for state management and endeavored to integrate all the components, which included headless Strapi CMS for managing products across various categories and Stripe for handling payments. To host the application, I utilized Railway for a remote backend database and successfully deployed it there.
 
 ## Tech Stack
 

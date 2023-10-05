@@ -7,6 +7,8 @@ VIISHCULZA is a fully responsive fictional online e-commerce store providing fas
 
 ![VIISHCULZA](https://github.com/vivi-su/e-commerce-vivi/assets/81454201/5ef8109d-801a-413a-acc9-4f8c77d7a643)
 
+Backend Repo here: https://github.com/vivi-su/e-commerce-vivi-server
+
 Backend server link: https://e-commerce-vivi-server-production-8468.up.railway.app/
 
 ## Tech Stack
